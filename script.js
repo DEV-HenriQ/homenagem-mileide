@@ -14,12 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
        'img/img-3.jpg': 5000,
        'img/img-4.jpg': 5000,
        'img/img-5.jpg': 5000,
+       'vid/vid-1.mp4': 22000,
        'img/img-6.jpg': 5000,
        'img/img-7.jpg': 5000,
        'img/img-8.jpg': 5000,
        'img/img-9.jpg': 5000,
-       'vid/vid-1.mp4': 22000, 
-       'vid/vid-2.mp4': 18000  
+       'img/img-10.jpg': 5000,
+       'vid/vid-2.mp4': 18000,
+       'img/img-11.jpg': 5000,
+       'img/img-12.jpg': 5000,
+       'img/img-13.jpg': 5000,
+       'img/img-14.jpg': 5000,
+       'img/img-15.jpg': 5000,
+       'vid/vid-3.mp4': 9000
    };
 
    // Função para mostrar um slide específico
@@ -47,14 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
        // Lógica para ajustar o volume da música de fundo
        if (videoElement) {
-           // Se o slide for um vídeo, diminui o volume da música de fundo para 40%
-           music.volume = 0.32; 
+           // Se o slide for um vídeo, diminui o volume da música de fundo para 25%
+           music.volume = 0.25; 
            videoElement.muted = false; // Garante que o vídeo não está mutado
            videoElement.play().catch(error => {
                console.log("Erro ao tentar reproduzir vídeo: " + error);
            });
        } else {
-           // Se o slide for uma imagem, volta o volume da música de fundo para 100%
+           // Se o slide for uma imagem, volta o volume da música de fundo para 70%
            music.volume = .7; 
        }
 
