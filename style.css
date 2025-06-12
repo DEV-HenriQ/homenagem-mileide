@@ -51,6 +51,24 @@ h3 {
    transition: opacity 1s ease-out, visibility 1s ease-out; /* Transição suave */
 }
 
+
+.bght
+{
+   display: flex; /* Para centralizar o h1 e o p */
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-image: url(./img/love-heart-pbb.png);
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: 450px 450px;
+   height: 100vh; /* Ocupa a altura total da viewport */
+   width: 100%;
+   position: absolute; /* Para que ele ocupe a tela sem empurrar o carrossel */
+   top: 0;
+   left: 0;
+}
+
 .initial-screen.fade-out {
    opacity: 0;
    visibility: hidden;
@@ -58,6 +76,7 @@ h3 {
 
 .click-to-start {
    font-family: 'Montserrat', Arial, sans-serif; /* Aplica a nova fonte ao texto de clique */
+   font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 1.5em;
    color: #eb3406;
    cursor: pointer; 
